@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Ball.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+
+[sub_resource type="PhysicsMaterial" id=1]
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 155, 288 )
+
+[node name="Ball" parent="." instance=ExtResource( 1 )]
+position = Vector2( 402, 266 )
+
+[node name="Ball2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 398, 103 )
+
+[node name="Ball3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 403, 397 )
+
+[node name="Ball4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 308, 279 )
+
+[node name="Ball5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 304, 116 )
+
+[node name="Ball6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 309, 410 )
+
+[node name="Ball7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 465, 270 )
+
+[node name="Ball8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 461, 107 )
+
+[node name="Ball9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 466, 401 )
+
+[node name="Ball10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 236, 279 )
+
+[node name="Ball11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 232, 116 )
+
+[node name="Ball12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 237, 410 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 91, -2 )
+scale = Vector2( 0.665261, 0.913476 )
+physics_material_override = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 46, -12 )
+polygon = PoolVector2Array( 30.6616, 62.3571, 843.876, 59.0729, 827.341, 552.792, -53.5159, 552.792, -50.5095, 57.9782, 27.6553, 62.3571, 29.1584, -271.532, -680.337, -237.596, -626.223, 895.439, 1763.82, 903.102, 1571.41, -338.31, 27.6553, -273.722, 29.1584, 62.3571 )
