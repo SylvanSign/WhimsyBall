@@ -1,56 +1,246 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Ball.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World.gd" type="Script" id=3]
 
 [sub_resource type="PhysicsMaterial" id=1]
+friction = 0.0
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 847.036, 42.6941 )
 
 [node name="World" type="Node2D"]
+script = ExtResource( 3 )
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 155, 288 )
+[node name="Balls" type="Node2D" parent="."]
 
-[node name="Ball" parent="." instance=ExtResource( 1 )]
+[node name="Ball" parent="Balls" instance=ExtResource( 1 )]
 position = Vector2( 402, 266 )
 
-[node name="Ball2" parent="." instance=ExtResource( 1 )]
+[node name="Ball2" parent="Balls" instance=ExtResource( 1 )]
 position = Vector2( 398, 103 )
 
-[node name="Ball3" parent="." instance=ExtResource( 1 )]
+[node name="Ball3" parent="Balls" instance=ExtResource( 1 )]
 position = Vector2( 403, 397 )
 
-[node name="Ball4" parent="." instance=ExtResource( 1 )]
+[node name="Ball4" parent="Balls" instance=ExtResource( 1 )]
 position = Vector2( 308, 279 )
 
-[node name="Ball5" parent="." instance=ExtResource( 1 )]
+[node name="Ball5" parent="Balls" instance=ExtResource( 1 )]
 position = Vector2( 304, 116 )
 
-[node name="Ball6" parent="." instance=ExtResource( 1 )]
+[node name="Ball6" parent="Balls" instance=ExtResource( 1 )]
 position = Vector2( 309, 410 )
 
-[node name="Ball7" parent="." instance=ExtResource( 1 )]
+[node name="Ball7" parent="Balls" instance=ExtResource( 1 )]
 position = Vector2( 465, 270 )
 
-[node name="Ball8" parent="." instance=ExtResource( 1 )]
+[node name="Ball8" parent="Balls" instance=ExtResource( 1 )]
 position = Vector2( 461, 107 )
 
-[node name="Ball9" parent="." instance=ExtResource( 1 )]
+[node name="Ball9" parent="Balls" instance=ExtResource( 1 )]
 position = Vector2( 466, 401 )
 
-[node name="Ball10" parent="." instance=ExtResource( 1 )]
+[node name="Ball10" parent="Balls" instance=ExtResource( 1 )]
 position = Vector2( 236, 279 )
 
-[node name="Ball11" parent="." instance=ExtResource( 1 )]
+[node name="Ball11" parent="Balls" instance=ExtResource( 1 )]
 position = Vector2( 232, 116 )
 
-[node name="Ball12" parent="." instance=ExtResource( 1 )]
+[node name="Ball12" parent="Balls" instance=ExtResource( 1 )]
 position = Vector2( 237, 410 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="Ball13" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 464, 310 )
+
+[node name="Ball14" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 460, 147 )
+
+[node name="Ball15" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 465, 441 )
+
+[node name="Ball16" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 370, 323 )
+
+[node name="Ball17" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 366, 160 )
+
+[node name="Ball18" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 371, 454 )
+
+[node name="Ball19" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 527, 314 )
+linear_velocity = Vector2( -500, 0 )
+
+[node name="Ball20" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 523, 151 )
+linear_velocity = Vector2( -500, 0 )
+
+[node name="Ball49" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 606, 322 )
+linear_velocity = Vector2( -200, -200 )
+
+[node name="Ball21" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 528, 445 )
+linear_velocity = Vector2( -500, 0 )
+
+[node name="Ball22" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 298, 323 )
+
+[node name="Ball23" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 294, 160 )
+
+[node name="Ball24" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 299, 454 )
+
+[node name="Ball25" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 403, 233 )
+
+[node name="Ball26" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 399, 70 )
+
+[node name="Ball27" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 404, 364 )
+
+[node name="Ball28" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 309, 246 )
+
+[node name="Ball29" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 305, 83 )
+
+[node name="Ball30" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 310, 377 )
+
+[node name="Ball31" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 466, 237 )
+
+[node name="Ball32" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 462, 74 )
+
+[node name="Ball33" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 467, 368 )
+
+[node name="Ball34" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 237, 246 )
+
+[node name="Ball35" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 233, 83 )
+
+[node name="Ball36" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 238, 377 )
+
+[node name="Ball37" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 465, 277 )
+
+[node name="Ball38" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 461, 114 )
+
+[node name="Ball39" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 466, 408 )
+
+[node name="Ball40" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 371, 290 )
+
+[node name="Ball41" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 367, 127 )
+
+[node name="Ball42" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 372, 421 )
+
+[node name="Ball43" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 528, 281 )
+linear_velocity = Vector2( -500, 0 )
+
+[node name="Ball44" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 524, 118 )
+linear_velocity = Vector2( -500, 0 )
+
+[node name="Ball45" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 529, 412 )
+linear_velocity = Vector2( -500, 0 )
+
+[node name="Ball46" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 299, 290 )
+
+[node name="Ball47" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 295, 127 )
+
+[node name="Ball48" parent="Balls" instance=ExtResource( 1 )]
+position = Vector2( 300, 421 )
+
+[node name="Player1" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.14902, 1, 0, 1 )
+position = Vector2( 155, 288 )
+
+[node name="Player2" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.0313726, 0, 1, 1 )
+position = Vector2( 641, 288 )
+
+[node name="Walls" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Walls"]
 position = Vector2( 91, -2 )
 scale = Vector2( 0.665261, 0.913476 )
 physics_material_override = SubResource( 1 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2( 46, -12 )
-polygon = PoolVector2Array( 30.6616, 62.3571, 843.876, 59.0729, 827.341, 552.792, -53.5159, 552.792, -50.5095, 57.9782, 27.6553, 62.3571, 29.1584, -271.532, -680.337, -237.596, -626.223, 895.439, 1763.82, 903.102, 1571.41, -338.31, 27.6553, -273.722, 29.1584, 62.3571 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D"]
+position = Vector2( 618.554, 6.56832 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D"]
+margin_left = -227.0
+margin_top = -36.0
+margin_right = 1464.0
+margin_bottom = 49.0
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Walls"]
+position = Vector2( 91, 595 )
+scale = Vector2( 0.665261, 0.913476 )
+physics_material_override = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D2"]
+position = Vector2( 618.554, 6.56832 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="ColorRect2" type="ColorRect" parent="Walls/StaticBody2D2"]
+margin_left = -227.0
+margin_top = -36.1257
+margin_right = 1464.0
+margin_bottom = 48.8743
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1.52588e-05, -114 )
+rotation = 1.5708
+scale = Vector2( 0.665261, 0.913476 )
+physics_material_override = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D3"]
+position = Vector2( 618.554, 6.56832 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="ColorRect3" type="ColorRect" parent="Walls/StaticBody2D3"]
+margin_left = -226.978
+margin_top = -35.031
+margin_right = 1464.02
+margin_bottom = 49.969
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1033, -114 )
+rotation = 1.5708
+scale = Vector2( 0.665261, 0.913476 )
+physics_material_override = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D4"]
+position = Vector2( 618.554, 6.56832 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="ColorRect4" type="ColorRect" parent="Walls/StaticBody2D4"]
+margin_left = -226.979
+margin_top = -35.0312
+margin_right = 1464.02
+margin_bottom = 49.9688
